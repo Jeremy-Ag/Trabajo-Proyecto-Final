@@ -1,0 +1,191 @@
+/* Estilos para dispositivos móviles */
+
+/* Ajustes generales */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Encabezado */
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+} */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin: 0 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: color 0.3s ease-in-out;
+}
+nav a:hover {
+  color: #ff5e5e;
+}
+
+/* Redes sociales */
+.redes-sociales {
+  background-color: #333;
+  text-align: center;
+  padding: 10px;
+}
+
+.redes-sociales a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+/* Artículo */
+/* Estilos para mobile */
+/* Para dispositivos móviles */
+@media screen and (max-width: 767px) {
+  .grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .grid-container {
+    flex-basis: 48%;
+    margin-bottom: 20px;
+  }
+}
+/*Acerca de*/
+#acerca{
+  text-align: center;
+  margin-top: 150px;
+}
+
+#acerca h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+#acerca p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  text-align: justify;
+  color: #666;
+  margin: 0 100px;
+}
+/* Contenido de las news */
+.titulonews {
+  margin-top: 10%;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+  color: #222;
+  text-align: center; /* Centro el título en dispositivos móviles */
+}
+
+.news-content {
+  display: flex;
+  flex-direction: column; /* Cambio la dirección de la flexbox en dispositivos móviles */
+  align-items: center; /* Centro los elementos en dispositivos móviles */
+  margin-bottom: 20px;
+}
+
+.news-image img {
+  width: 100%; /* Ajusto el ancho de la imagen al 100% del contenedor */
+  margin-bottom: 20px; /* Agrego un margen inferior para separar la imagen del texto */
+}
+
+.news-text {
+  margin-right: 0; /* Elimino el margen derecho en dispositivos móviles */
+}
+
+.news-text p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+  line-height: 2;
+  text-align: justify;
+  color: #666;
+}
+
+
+/* Formulario de contacto */
+#contacto {
+  text-align: center;
+  margin-top: 150px;
+}
+
+#contacto h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+  display: inline-block;
+  background-color: #ff5e5e;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #222;
+}
+
+/* Estilos para dispositivos móviles */
+@media screen and (min-width: 769px) {
+  /* Agrega aquí los estilos específicos para dispositivos de escritorio */
+  input,
+  textarea {
+    width: 300px;
+    max-width: none;
+  }
+}
+
